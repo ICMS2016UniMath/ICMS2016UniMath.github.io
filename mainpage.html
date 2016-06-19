@@ -84,14 +84,37 @@ Inspired by this robustness, we have created a library by generalizing our proof
  
 
    
-  <li><h3>TBA</h3>
+  <li><h3>Inductive sets in UniMath</h3>
     <b>Benedikt Ahrens</b> (IAS/Coq-HoTT)
     <p><!--
     <a href="??????">Extended abstract</a> 
     <br>
     <br>-->
     <strong>Abstract</strong>: 
-    TBA
+   UniMath, short for "Univalent Mathematics", refers to both a language
+(a.k.a. a formal system) for mathematics, as well as to a
+computer-checked library of mathematics formalized in that system.
+The UniMath library, under active development, aims to coherently
+integrate machine-checked proofs of mathematical results from many
+different branches of mathematics.
+
+The UniMath language is a dependent type theory, augmented by the
+univalence axiom. One goal is to keep the language as small as possible,
+to ease verification of the theory. In particular, general inductive
+types are not part of the language.
+
+In joint work with Mörtberg, we partially remedy this lack by
+constructing a class of inductive (families of) sets. This involves a
+formalization of a standard category-theoretic result on the
+construction of initial algebras, as well as a mechanism to conveniently
+use the inductive sets thus obtained.
+
+By combining the present work with a previous formalization of
+substitution systems by Ahrens and Matthes, we obtain a framework for
+specifying, via a signature, programming languages with binders as
+nested inductive datatypes. The datatypes are automatically equipped
+with the structure of a monad, where the monadic operations and axioms
+correspond to a well-behaved substitution operation.
     <p>         
   
 
