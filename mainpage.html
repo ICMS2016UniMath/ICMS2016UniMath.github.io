@@ -31,7 +31,8 @@ The goal of the session is to bring together people in the proof assistant commu
 <p>
 
 
-<!--------------------------------------------------->
+<!--
+
 <h3>Publications</h3>
 
 <ul>
@@ -49,7 +50,7 @@ The goal of the session is to bring together people in the proof assistant commu
        will be organized immediately after the meeting.
 </ul>
 
-<!--------------------------------------------------->
+
 <h3>Submission Guidelines</h3>
 <ul>
   <li> If you would like to give a talk at ICMS, you need to submit
@@ -62,7 +63,7 @@ The goal of the session is to bring together people in the proof assistant commu
        the submission guideline for a journal special issue 
        will be communicated to you by the session organizers.
 </ul>
-
+-->
 
 <!--------------------------------------------------->
 <h3>Talks/Abstracts</h3>
@@ -80,12 +81,17 @@ The goal of the session is to bring together people in the proof assistant commu
 For a language with many term constructors, e.g. Nuprl, proofs about substitution typically need similar reasoning across many cases.
 Therefore, while formalizing Nuprl, we used Howe's uniform representation of terms, which allowed us to consider only 3 cases while defining concepts like substitution and free variables, and proving properties about them. Extending the language with new constructs required absolutely no change in our thousands of lines of proofs about substitution, free variables, and alpha equality. 
 Inspired by this robustness, we have created a library by generalizing our proofs to work for a  large class of languages. One can specify a language as a collection of term constructors and their variable-binding signatures, and use our rich collection of proofs. We have recently used this library for proofs about the Certicoq compiler for Coq.
-  <p>         
+  <p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/Anand_ICMS2016.pdf">Slides
+of the talk</a>
  
 
    
   <li><h3>Inductive sets in UniMath</h3>
-    <b>Benedikt Ahrens</b> (IAS/Coq-HoTT)
+    <b>Benedikt Ahrens</b> (IAS/Coq-HoTT) with Ralph Matthes and
+    Anders Mortberg
     <p><!--
     <a href="??????">Extended abstract</a> 
     <br>
@@ -115,12 +121,17 @@ specifying, via a signature, programming languages with binders as
 nested inductive datatypes. The datatypes are automatically equipped
 with the structure of a monad, where the monadic operations and axioms
 correspond to a well-behaved substitution operation.
-    <p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/Aherns_Benedikt_ICMS2016.pdf">Slides
+of the talk</a>
+
   
 
    
   <li><h3>A Cubical Type Theory </h3>
-    <b>Thorsten Altenkirch</b> (University of Nottingtham)
+    <b>Thorsten Altenkirch</b> (University of Nottingtham) with Ambrus Kaposi
     <p><!--
     <a href="??????">Extended abstract</a> 
     <br>
@@ -128,7 +139,11 @@ correspond to a well-behaved substitution operation.
     <strong>Abstract</strong>: 
     We develop a version of cubical Type Theory which is based on heterogenous logical relations with the view towards implementing Homotopy Type Theory. We compare our approach with the work by Coquand et al who have proposed a cubical type theory using the interval.
 This is based on joint work with Ambrus Kaposi.
-    <p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/Altenkirch_Thorsten_icms16.pdf">Slides
+of the talk</a>
   
 
    
@@ -145,7 +160,11 @@ We discuss various types of mistakes, in definitions, theorems,
 proofs, as well as in axioms. We make an attempt at qualifying
 how serious certain types of mistakes are and which role formalization
 can play in detecting them.
-    <p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/Bezem_slides.pdf">Slides
+of the talk</a>
   
 
    
@@ -193,7 +212,11 @@ theory, and then use that theory to get a univalent theory.
 Univalence follows from the existence of <i>uniform composition structure</i> for all types in the new theory, including a special Glue type. We have proved the equivalence of two different definitions of composition structure, and shown that they exist for
 the Pi, Sigma, and Path types. By the time of this meeting, we expect that composition for Glue, composition for
 Universe, and Univalence will all be verified.
-    <p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/Bickford_Slides.pdf">Slides
+of the talk</a>
   
 
    <!--
@@ -206,7 +229,15 @@ Universe, and Univalence will all be verified.
     <strong>Abstract</strong>: 
     TBA
     <p>         
-  -->
+-->
+
+<!-- As an example for linking the slides I give you the html code I
+inserted in the section General. I inserted a blank line after the
+text of the abstract and then the text:
+
+<a href="http://janheiland.de/files/talks/1607_rrr.pdf">slides of the talk</a>
+(the part inside <..> is the link, the text after > is the description)
+-->
 
    
   <li><h3>The HoTT/HoTT Library in Coq: Designing for Speed</h3>
@@ -239,12 +270,16 @@ The UniMath library is a Coq library which aims to formalize
     provide a definition of non-negative real numbers inspired by
     Dedekind cuts and to prove all of the expected properties of the
     resulting constructive field of real numbers. 
-    <p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/Lelay_slides.pdf">Slides
+of the talk</a>
   
 
  
   <li><h3>Cubical Type Theory</h3>
-    <b>Anders Mortberg</b> (IAS)
+    <b>Anders Mortberg</b> (IAS) with C. Chen, T Coquand and S. Huber
     <p><!--
     <a href="??????">Extended abstract</a> 
     <br>
@@ -259,7 +294,11 @@ as well as Voevodsky's univalence axiom are provable. We have
 impemented an experimental proof assistant based on this type theory
 called cubicaltt. In the talk I will discuss various examples that we
 have formalized in cubicaltt which uses that univalence computes.
-<p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/Mortberg_slides.pdf">Slides
+of the talk</a>
  
 
  
@@ -295,7 +334,7 @@ of Brouwer's bar induction principle.
 
 
   <li><h3>Coq for Univalent Foundations</h3>
-    <b>Matthieu Sozeau</b> (Inria Paris)
+    <b>Matthieu Sozeau</b> (Inria Paris & IRIF, Universite Paris 7 Diderot)
     <p><!--
     <a href="??????">Extended abstract</a> 
     <br>
@@ -315,12 +354,16 @@ dependent pattern-matching, whose meaning changes slightly.
 I will describe the impact it had on these tools, the design choices
 made and the applications of these tools in univalent formalizations. 
 
-    <p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/Sozeau_Coq_for_HoTT-ICMS16-140716.pdf">Slides
+of the talk</a>
 
 
  
   <li><h3>The Lean HoTT library</h3>
-    <b>Floris van Doorn</b> (CMU)
+    <b>Floris van Doorn</b> (Department of Philosophy, CMU)
     <p><!--
     <a href="??????">Extended abstract</a> 
     <br>
@@ -331,12 +374,16 @@ made and the applications of these tools in univalent formalizations.
 a built-in HoTT library, which contains a solid foundation for doing HoTT, including most theorems
 from the HoTT book. In addition, the library contains category theory and there is active
 development in synthetic homotopy theory.
- <p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/van_Doorn_Floris_lean_berlin.pdf">Slides
+of the talk</a>
   
 
   <li><h3>Formalizing Double Groupoids and Cross Modules in the Lean
   Theorem Prover</h3>
-    <b>Jacob von Raumer</b> (University of Nottingham/CMU)
+    <b>Jacob von Raumer</b> (University of Nottingham)
     <p>
     <!-- <a href="??????">Extended abstract</a> 
     <br>
@@ -346,7 +393,11 @@ development in synthetic homotopy theory.
   Lean is a new open source dependently typed theorem prover which is mainly being developed by Leonardo de Moura at Microsoft Research. It is suited to be used for proof irrelevant reasoning as well as for proof relevant, univalent formalizations of mathematics. In my talk, I will present the experiences I had doing a formalization project in Lean.
 
 One of the interesting aspects of homotopy type theory is the ability to perform synthetic homotopy theory on higher types. While for the first homotopy group the choice of a suitable algebraic structure to capture the homotopic information is obvious -- it's a group -- implementing a structure to capture the information about both the first and the second homotopy group (or groupoid) of a type and their interactions is more involved. Following Ronald Brown's book on Nonabelian Algebraic Topology, I formalized two structures: Double groupoids with thin structures and crossed modules on groupoids. I furthermore attempted to prove their equivalence. The project can be seen as a usability and performance test for the new theorem prover.
-    <p>         
+<p>
+
+<a
+href="http://www.math.ias.edu/vladimir/files/von_Raumer_Jacob.pdf">Slides
+of the talk</a>
   
 
   <!--
